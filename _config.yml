@@ -1,12 +1,12 @@
-title: "My Blogs Name"
-author: "Default Author Name"
-description: "Some short description of your blog can go here." # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
+title: "OpenFOAM stuff"
+author: "Ben Malin"
+description: "Place for me to dump interesting OpenFOAM bits and pieces" # This will show up in places like twitter, linkedin, etc, if you share your sites url as a post.
 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
-email: "example@mail.com"
+email: "ben.malin@mottmac.com"
 twitter_username: "twitteruser"
-github_username: "githubuser"
+github_username: "ben-malin"
 linkedin_username: "linkedinuser"
 #facebook_username: username
 #flickr_username: username
@@ -22,9 +22,9 @@ theme: "minima"
 
 rss: rss
 
-kramdown:
-  syntax_highlighter_opts:
-    disable: true
+# kramdown:
+#   syntax_highlighter_opts:
+#     disable: true
     
 plugins:
   - jekyll-feed
