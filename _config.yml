@@ -5,9 +5,9 @@ description: "Place for me to dump interesting OpenFOAM bits and pieces" # This 
 # Email / Social media user names used by the minima theme:
 # All of these are optional and can be removed or commented out
 email: "ben.malin@mottmac.com"
-twitter_username: "twitteruser"
+#twitter_username: "twitteruser"
 github_username: "ben-malin"
-linkedin_username: "linkedinuser"
+linkedin_username: "ben-malin"
 #facebook_username: username
 #flickr_username: username
 #instagram_username: username
