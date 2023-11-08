@@ -51,7 +51,7 @@ It must have some purpose, but for my applications it completely messes up the l
 
 ![nSmoothNormalsSurface](/images/snappy/nSmoothNormals_surface.png)
 
-**nSmoothSurfaceNormals**: 3-10 range seems to be the goldilocks zone, 0-1 is a bit worse, 100 is quite a lot worse.  
+**nSmoothSurfaceNormals**: 3-10 range seems to be the goldilocks zone, 0-1 is a bit worse, 30 is worse in different places.  
 
 ![nSmoothSurfaceNormalsSurface](/images/snappy/nSmoothSurfaceNormals_surface.png)
 
