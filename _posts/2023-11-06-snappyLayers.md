@@ -35,7 +35,9 @@ maxThicknessToMedialRatio: These medial ratio settings have to do with layer ext
 
 ![minMedialAxisAngleSurface](/images/snappy/minMedialAxisAngle_surface.png)
 
-minThickness: This one really surprised me. I've always set minThickness to a low value, as I don't typically mind if my layers are a bit thin. So, I set the minThickness really low, expecting that it won't prevent layers being added (and relying on the min determinant quality control to prevent any super thin cells).  
+minThickness: This one really surprised me.
+I've always set minThickness to a low value, as I don't typically mind if my layers are a bit thin.
+So, I set the minThickness really low, expecting that it won't prevent layers being added (and relying on the min determinant quality control to prevent any super thin cells).  
 Weirdly, very low values of minThickness result in worse layer addition for some reason...  
 
 ![minThicknessSurface](/images/snappy/minThickness_surface.png)
@@ -50,30 +52,33 @@ nSmoothNormals: has minimal effect on the layer coverage
 ![nSmoothNormalsSurface](/images/snappy/nSmoothNormals_surface.png)
 
 nSmoothSurfaceNormals: 3-10 range seems to be the goldilocks zone, 0-1 is a bit worse, 100 is quite a lot worse.  
-Doesn't seem to be a value that gives much better coverage  
 
 ![nSmoothSurfaceNormalsSurface](/images/snappy/nSmoothSurfaceNormals_surface.png)
 
-nSmoothThickness: Was surprised by this one, higher values produce worse coverage, and really bad coverage if you crank it up to high values
+nSmoothThickness: Was surprised by this one, higher values produce worse coverage, and really bad coverage if you crank it up  
 
 ![nSmoothThicknessSurface](/images/snappy/nSmoothThickness_surface.png)
 
 ---
 
-And finally, I took the best result from each of the above test to compile the ultimate layer settings for this particular case:
+And finally, I took the best result from each of the above tests to compile the ultimate layer settings for this particular case:
 
 ![bestOfSurface](/images/snappy/bestOf_surface.png)
 ![bestOfSlice](/images/snappy/bestOf_slice.png)
 
-And after all of that, it's barely better than some of the more ideal options above.
-It is definitely an improvement though, for instance it has managed to produce layers covering the edge that hasn't quite snapped properly, where none of the individual setting changes were able to do that.
+And after all of that, it's barely better than some of options above where only a single option was changed.
+It is definitely an improvement though, for instance it has managed to produce layers covering the edge that hasn't quite snapped properly, where none of the individual setting changes were able to do that.  
+The acute corner remains a challenge, which I expected.  
+What I didn't expect was that it would be so difficult to get full coverage where it transitions from the curved surface into the angled feature.  
 
-The final settings were:
+The final settings were:  
 featureAngle = 180  
-maxFaceThicknessRatio = 1
-maxThicknessToMedialRatio = 1
-minMedialAxisAngle = 30
-minThickness = 0.1
-nSmoothNormals = 1
-nSmoothSurfaceNormals = 3
-nSmoothThickness = 0
+maxFaceThicknessRatio = 1  
+maxThicknessToMedialRatio = 1  
+minMedialAxisAngle = 30  
+minThickness = 0.1  
+nSmoothNormals = 1  
+nSmoothSurfaceNormals = 3  
+nSmoothThickness = 0  
+
+
