@@ -1,3 +1,8 @@
+---
+description: A test of the various layer settings in snappyHexMesh
+tags: Meshing
+---
+
 ## SnappyHexMesh: Layer Settings
 
 **SnappyHexMesh** Features a number of cryptically named layer addition settings, with little indication of how they might be expected to influence the layer addition.

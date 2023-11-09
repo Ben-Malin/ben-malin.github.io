@@ -1,6 +1,6 @@
 ---
 description: A simple functionObject to output the SST blending function
-tags: turbulence SST CFD OpenFoam
+tags: Turbulence
 ---
 
 ## Turbulence Modelling: SST Blending Function
