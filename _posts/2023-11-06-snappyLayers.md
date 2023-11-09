@@ -51,7 +51,7 @@ It must have some purpose, but for my applications it completely messes up the l
 
 ![nSmoothNormalsSurface](/images/snappy/nSmoothNormals_surface.png)
 
-**nSmoothSurfaceNormals**: 3-10 range seems to be the goldilocks zone, 0-1 is a bit worse, 100 is quite a lot worse.  
+**nSmoothSurfaceNormals**: 3-10 range seems to be the goldilocks zone, 0-1 is a bit worse, 30 is worse in different places.  
 
 ![nSmoothSurfaceNormalsSurface](/images/snappy/nSmoothSurfaceNormals_surface.png)
 
@@ -83,3 +83,19 @@ The final settings were:
 | nSmoothNormals            | 1     |
 | nSmoothSurfaceNormals     | 3     |
 | nSmoothThickness          | 0     |
+
+---
+
+### So Where To From Here
+
+Jumping over to the ESI fork of OpenFOAM, we can make use of the alternate mesh shrinking algorithm, which is based on the algorithm used to move meshes around for dynamicMesh cases.
+
+Enabling the displacement motion solver, using default snapping settings, with diffusivity set to quadratic inverseDistance, produces the following result  
+
+Interestingly, if we try using the Laplacian shrinker with the 'bestOf' settings from before, there isn't much improvement (and it's worse than laplacian + default settings)  
+Make of that what you will
+
+![shrinkerSurface](/images/snappy/shrinker_surface.png)
+![shrinkerSlice](/images/snappy/shrinker_slice.png)
+
+
