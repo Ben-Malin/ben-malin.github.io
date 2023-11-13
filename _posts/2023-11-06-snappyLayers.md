@@ -14,9 +14,8 @@ The goal was a geometry with some of the features that have caused me trouble in
 In the below images, white regions indicate full layer addition, while blue-black colours indicate fewer or no layers have been added.
 The goal is for the whole thing to be white, without compromising too much on mesh quality
 
-When I get around to it, I'll put the code that generated these images into a public repo, it would be great for other people to run combinations of these parameters, or different geometries, and share the results.
-
-Note: These tests were carried out in OpenFOAM v8
+The code used to generate all these images can be found in [this repository](https://github.com/Ben-Malin/snappyLayerTests).  
+If you make use of it and discover anything interesting about snappyHexMesh, please let me know :)
 
 ---
 First up, I tested what happens with all the mesh quality controls disabled.  
