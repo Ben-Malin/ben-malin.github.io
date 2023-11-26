@@ -1,1 +1,282 @@
-{"payload":{"allShortcutsEnabled":false,"fileTree":{"_sass/minima":{"items":[{"name":"skins","path":"_sass/minima/skins","contentType":"directory"},{"name":"_base.scss","path":"_sass/minima/_base.scss","contentType":"file"},{"name":"_layout.scss","path":"_sass/minima/_layout.scss","contentType":"file"},{"name":"custom-styles.scss","path":"_sass/minima/custom-styles.scss","contentType":"file"},{"name":"custom-variables.scss","path":"_sass/minima/custom-variables.scss","contentType":"file"},{"name":"initialize.scss","path":"_sass/minima/initialize.scss","contentType":"file"}],"totalCount":6},"_sass":{"items":[{"name":"minima","path":"_sass/minima","contentType":"directory"}],"totalCount":1},"":{"items":[{"name":"_includes","path":"_includes","contentType":"directory"},{"name":"_layouts","path":"_layouts","contentType":"directory"},{"name":"_posts","path":"_posts","contentType":"directory"},{"name":"_sass","path":"_sass","contentType":"directory"},{"name":"assets","path":"assets","contentType":"directory"},{"name":".about.markdown","path":".about.markdown","contentType":"file"},{"name":".gitignore","path":".gitignore","contentType":"file"},{"name":"404.html","path":"404.html","contentType":"file"},{"name":"Gemfile","path":"Gemfile","contentType":"file"},{"name":"Gemfile.lock","path":"Gemfile.lock","contentType":"file"},{"name":"_config.yml","path":"_config.yml","contentType":"file"},{"name":"index.markdown","path":"index.markdown","contentType":"file"}],"totalCount":12}},"fileTreeProcessingTime":6.321109,"foldersToFetch":[],"reducedMotionEnabled":null,"repo":{"id":500593639,"defaultBranch":"master","name":"alexander-taran.github.com","ownerLogin":"Alexander-Taran","currentUserCanPush":false,"isFork":false,"isEmpty":false,"createdAt":"2022-06-06T21:07:01.000Z","ownerAvatar":"https://avatars.githubusercontent.com/u/1029452?v=4","public":true,"private":false,"isOrgOwned":false},"symbolsExpanded":false,"treeExpanded":true,"refInfo":{"name":"master","listCacheKey":"v0:1654550899.054108","canEdit":false,"refType":"branch","currentOid":"6047ec2f28d2c2757da1b6c9fcb882df35511544"},"path":"_sass/minima/_base.scss","currentUser":null,"blob":{"rawLines":["html {","  font-size: $base-font-size;","}","","/**"," * Reset some basic elements"," */","body, h1, h2, h3, h4, h5, h6,","p, blockquote, pre, hr,","dl, dd, ol, ul, figure {","  margin: 0;","  padding: 0;","","}","","","","/**"," * Basic styling"," */","body {","  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;","  color: $text-color;","  background-color: $background-color;","  -webkit-text-size-adjust: 100%;","  -webkit-font-feature-settings: \"kern\" 1;","     -moz-font-feature-settings: \"kern\" 1;","       -o-font-feature-settings: \"kern\" 1;","          font-feature-settings: \"kern\" 1;","  font-kerning: normal;","  display: flex;","  min-height: 100vh;","  flex-direction: column;","  overflow-wrap: break-word;","}","","","","/**"," * Set `margin-bottom` to maintain vertical rhythm"," */","h1, h2, h3, h4, h5, h6,","p, blockquote, pre,","ul, ol, dl, figure,","%vertical-rhythm {","  margin-bottom: $spacing-unit / 2;","}","","hr {","  margin-top: $spacing-unit;","  margin-bottom: $spacing-unit;","}","","/**"," * `main` element"," */","main {","  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */","}","","","","/**"," * Images"," */","img {","  max-width: 100%;","  vertical-align: middle;","}","","","","/**"," * Figures"," */","figure > img {","  display: block;","}","","figcaption {","  font-size: $small-font-size;","}","","","","/**"," * Lists"," */","ul, ol {","  margin-left: $spacing-unit;","}","","li {","  > ul,","  > ol {","    margin-bottom: 0;","  }","}","","","","/**"," * Headings"," */","h1, h2, h3, h4, h5, h6 {","  font-weight: $base-font-weight;","}","","","","/**"," * Links"," */","a {","  color: $link-base-color;","  text-decoration: none;","","  &:visited {","    color: $link-visited-color;","  }","","  &:hover {","    color: $link-hover-color;","    text-decoration: underline;","  }","","  .social-media-list &:hover {","    text-decoration: none;","","    .username {","      text-decoration: underline;","    }","  }","}","","","/**"," * Blockquotes"," */","blockquote {","  color: $brand-color;","  border-left: 4px solid $border-color-01;","  padding-left: $spacing-unit / 2;","  @include relative-font-size(1.125);","  font-style: italic;","","  > :last-child {","    margin-bottom: 0;","  }","","  i, em {","    font-style: normal;","  }","}","","","","/**"," * Code formatting"," */","pre,","code {","  font-family: $code-font-family;","  font-size: 0.9375em;","  border: 1px solid $border-color-01;","  border-radius: 3px;","  background-color: $code-background-color;","}","","code {","  padding: 1px 5px;","}","","pre {","  padding: 8px 12px;","  overflow-x: auto;","","  > code {","    border: 0;","    padding-right: 0;","    padding-left: 0;","  }","}","",".highlight {","  border-radius: 3px;","  background: $code-background-color;","  @extend %vertical-rhythm;","","  .highlighter-rouge & {","    background: $code-background-color;","  }","}","","","","/**"," * Wrapper"," */",".wrapper {","  max-width: calc(#{$content-width} - (#{$spacing-unit}));","  margin-right: auto;","  margin-left: auto;","  padding-right: $spacing-unit / 2;","  padding-left: $spacing-unit / 2;","  @extend %clearfix;","","  @media screen and (min-width: $on-large) {","    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));","    padding-right: $spacing-unit;","    padding-left: $spacing-unit;","  }","}","","","","/**"," * Clearfix"," */","%clearfix:after {","  content: \"\";","  display: table;","  clear: both;","}","","","","/**"," * Icons"," */","",".orange {","  color: #f66a0a;","}","",".grey {","  color: #828282;","}","",".svg-icon {","  width: 16px;","  height: 16px;","  display: inline-block;","  fill: currentColor;","  padding: 5px 3px 2px 5px;","  vertical-align: text-bottom;","}","","","/**"," * Tables"," */","table {","  margin-bottom: $spacing-unit;","  width: 100%;","  text-align: $table-text-align;","  color: $table-text-color;","  border-collapse: collapse;","  border: 1px solid $table-border-color;","  tr {","    &:nth-child(even) {","      background-color: $table-zebra-color;","    }","  }","  th, td {","    padding: ($spacing-unit / 3) ($spacing-unit / 2);","  }","  th {","    background-color: $table-header-bg-color;","    border: 1px solid $table-header-border;","  }","  td {","    border: 1px solid $table-border-color;","  }","","  @include media-query($on-laptop) {","    display: block;","    overflow-x: auto;","    -webkit-overflow-scrolling: touch;","            -ms-overflow-style: -ms-autohiding-scrollbar;","  }","}"],"stylingDirectives":[[{"start":0,"end":4,"cssClass":"pl-ent"}],[{"start":2,"end":11,"cssClass":"pl-c1"},{"start":2,"end":11,"cssClass":"pl-c1"},{"start":13,"end":28,"cssClass":"pl-v"}],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":28,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":4,"cssClass":"pl-ent"},{"start":6,"end":8,"cssClass":"pl-ent"},{"start":10,"end":12,"cssClass":"pl-ent"},{"start":14,"end":16,"cssClass":"pl-ent"},{"start":18,"end":20,"cssClass":"pl-ent"},{"start":22,"end":24,"cssClass":"pl-ent"},{"start":26,"end":28,"cssClass":"pl-ent"}],[{"start":0,"end":1,"cssClass":"pl-ent"},{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":18,"cssClass":"pl-ent"},{"start":20,"end":22,"cssClass":"pl-ent"}],[{"start":0,"end":2,"cssClass":"pl-ent"},{"start":4,"end":6,"cssClass":"pl-ent"},{"start":8,"end":10,"cssClass":"pl-ent"},{"start":12,"end":14,"cssClass":"pl-ent"},{"start":16,"end":22,"cssClass":"pl-ent"}],[{"start":2,"end":8,"cssClass":"pl-c1"},{"start":2,"end":8,"cssClass":"pl-c1"},{"start":10,"end":11,"cssClass":"pl-c1"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":12,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":16,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":4,"cssClass":"pl-ent"}],[{"start":2,"end":6,"cssClass":"pl-ent"},{"start":8,"end":25,"cssClass":"pl-v"},{"start":26,"end":44,"cssClass":"pl-v"},{"start":28,"end":43,"cssClass":"pl-v"},{"start":44,"end":45,"cssClass":"pl-k"},{"start":45,"end":65,"cssClass":"pl-v"},{"start":47,"end":64,"cssClass":"pl-v"},{"start":66,"end":83,"cssClass":"pl-v"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":20,"cssClass":"pl-v"}],[{"start":2,"end":18,"cssClass":"pl-c1"},{"start":2,"end":18,"cssClass":"pl-c1"},{"start":20,"end":37,"cssClass":"pl-v"}],[{"start":2,"end":26,"cssClass":"pl-c1"},{"start":2,"end":26,"cssClass":"pl-c1"},{"start":28,"end":32,"cssClass":"pl-c1"},{"start":31,"end":32,"cssClass":"pl-k"}],[{"start":2,"end":31,"cssClass":"pl-c1"},{"start":2,"end":31,"cssClass":"pl-c1"},{"start":33,"end":39,"cssClass":"pl-s"},{"start":33,"end":34,"cssClass":"pl-pds"},{"start":38,"end":39,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-c1"}],[{"start":5,"end":31,"cssClass":"pl-c1"},{"start":5,"end":31,"cssClass":"pl-c1"},{"start":33,"end":39,"cssClass":"pl-s"},{"start":33,"end":34,"cssClass":"pl-pds"},{"start":38,"end":39,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-c1"}],[{"start":7,"end":31,"cssClass":"pl-c1"},{"start":7,"end":31,"cssClass":"pl-c1"},{"start":33,"end":39,"cssClass":"pl-s"},{"start":33,"end":34,"cssClass":"pl-pds"},{"start":38,"end":39,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-c1"}],[{"start":10,"end":31,"cssClass":"pl-c1"},{"start":10,"end":31,"cssClass":"pl-c1"},{"start":33,"end":39,"cssClass":"pl-s"},{"start":33,"end":34,"cssClass":"pl-pds"},{"start":38,"end":39,"cssClass":"pl-pds"},{"start":40,"end":41,"cssClass":"pl-c1"}],[{"start":2,"end":14,"cssClass":"pl-c1"},{"start":2,"end":14,"cssClass":"pl-c1"},{"start":16,"end":22,"cssClass":"pl-c1"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":15,"cssClass":"pl-c1"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":19,"cssClass":"pl-c1"},{"start":17,"end":19,"cssClass":"pl-k"}],[{"start":2,"end":16,"cssClass":"pl-c1"},{"start":2,"end":16,"cssClass":"pl-c1"},{"start":18,"end":24,"cssClass":"pl-c1"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":27,"cssClass":"pl-c1"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":50,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":2,"cssClass":"pl-ent"},{"start":4,"end":6,"cssClass":"pl-ent"},{"start":8,"end":10,"cssClass":"pl-ent"},{"start":12,"end":14,"cssClass":"pl-ent"},{"start":16,"end":18,"cssClass":"pl-ent"},{"start":20,"end":22,"cssClass":"pl-ent"}],[{"start":0,"end":1,"cssClass":"pl-ent"},{"start":3,"end":13,"cssClass":"pl-ent"},{"start":15,"end":18,"cssClass":"pl-ent"}],[{"start":0,"end":2,"cssClass":"pl-ent"},{"start":4,"end":6,"cssClass":"pl-ent"},{"start":8,"end":10,"cssClass":"pl-ent"},{"start":12,"end":18,"cssClass":"pl-ent"}],[{"start":0,"end":16,"cssClass":"pl-e"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":30,"cssClass":"pl-v"},{"start":31,"end":32,"cssClass":"pl-k"},{"start":33,"end":34,"cssClass":"pl-c1"}],[],[],[{"start":0,"end":2,"cssClass":"pl-ent"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":27,"cssClass":"pl-v"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":30,"cssClass":"pl-v"}],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":17,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":4,"cssClass":"pl-ent"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":16,"cssClass":"pl-c1"},{"start":18,"end":90,"cssClass":"pl-c"},{"start":18,"end":20,"cssClass":"pl-c"},{"start":88,"end":90,"cssClass":"pl-c"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":9,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-ent"}],[{"start":2,"end":11,"cssClass":"pl-c1"},{"start":2,"end":11,"cssClass":"pl-c1"},{"start":13,"end":17,"cssClass":"pl-c1"},{"start":16,"end":17,"cssClass":"pl-k"}],[{"start":2,"end":16,"cssClass":"pl-c1"},{"start":2,"end":16,"cssClass":"pl-c1"},{"start":18,"end":24,"cssClass":"pl-c1"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":10,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":6,"cssClass":"pl-ent"},{"start":9,"end":12,"cssClass":"pl-ent"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":16,"cssClass":"pl-c1"}],[],[],[{"start":0,"end":10,"cssClass":"pl-ent"}],[{"start":2,"end":11,"cssClass":"pl-c1"},{"start":2,"end":11,"cssClass":"pl-c1"},{"start":13,"end":29,"cssClass":"pl-v"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":8,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":2,"cssClass":"pl-ent"},{"start":4,"end":6,"cssClass":"pl-ent"}],[{"start":2,"end":13,"cssClass":"pl-c1"},{"start":2,"end":13,"cssClass":"pl-c1"},{"start":15,"end":28,"cssClass":"pl-v"}],[],[],[{"start":0,"end":2,"cssClass":"pl-ent"}],[{"start":4,"end":6,"cssClass":"pl-ent"}],[{"start":4,"end":6,"cssClass":"pl-ent"}],[{"start":4,"end":17,"cssClass":"pl-c1"},{"start":4,"end":17,"cssClass":"pl-c1"},{"start":19,"end":20,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":11,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":2,"cssClass":"pl-ent"},{"start":4,"end":6,"cssClass":"pl-ent"},{"start":8,"end":10,"cssClass":"pl-ent"},{"start":12,"end":14,"cssClass":"pl-ent"},{"start":16,"end":18,"cssClass":"pl-ent"},{"start":20,"end":22,"cssClass":"pl-ent"}],[{"start":2,"end":13,"cssClass":"pl-c1"},{"start":2,"end":13,"cssClass":"pl-c1"},{"start":15,"end":32,"cssClass":"pl-v"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":8,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":1,"cssClass":"pl-ent"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":25,"cssClass":"pl-v"}],[{"start":2,"end":17,"cssClass":"pl-c1"},{"start":2,"end":17,"cssClass":"pl-c1"},{"start":19,"end":23,"cssClass":"pl-c1"}],[],[{"start":2,"end":3,"cssClass":"pl-ent"},{"start":3,"end":11,"cssClass":"pl-e"}],[{"start":4,"end":9,"cssClass":"pl-c1"},{"start":4,"end":9,"cssClass":"pl-c1"},{"start":11,"end":30,"cssClass":"pl-v"}],[],[],[{"start":2,"end":3,"cssClass":"pl-ent"},{"start":3,"end":9,"cssClass":"pl-e"}],[{"start":4,"end":9,"cssClass":"pl-c1"},{"start":4,"end":9,"cssClass":"pl-c1"},{"start":11,"end":28,"cssClass":"pl-v"}],[{"start":4,"end":19,"cssClass":"pl-c1"},{"start":4,"end":19,"cssClass":"pl-c1"},{"start":21,"end":30,"cssClass":"pl-c1"}],[],[],[{"start":2,"end":20,"cssClass":"pl-e"},{"start":21,"end":22,"cssClass":"pl-ent"},{"start":22,"end":28,"cssClass":"pl-e"}],[{"start":4,"end":19,"cssClass":"pl-c1"},{"start":4,"end":19,"cssClass":"pl-c1"},{"start":21,"end":25,"cssClass":"pl-c1"}],[],[{"start":4,"end":13,"cssClass":"pl-e"}],[{"start":6,"end":21,"cssClass":"pl-c1"},{"start":6,"end":21,"cssClass":"pl-c1"},{"start":23,"end":32,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":14,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":10,"cssClass":"pl-ent"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":21,"cssClass":"pl-v"}],[{"start":2,"end":13,"cssClass":"pl-c1"},{"start":2,"end":13,"cssClass":"pl-c1"},{"start":15,"end":18,"cssClass":"pl-c1"},{"start":16,"end":18,"cssClass":"pl-k"},{"start":19,"end":24,"cssClass":"pl-c1"},{"start":25,"end":41,"cssClass":"pl-v"}],[{"start":2,"end":14,"cssClass":"pl-c1"},{"start":2,"end":14,"cssClass":"pl-c1"},{"start":16,"end":29,"cssClass":"pl-v"},{"start":30,"end":31,"cssClass":"pl-k"},{"start":32,"end":33,"cssClass":"pl-c1"}],[{"start":2,"end":10,"cssClass":"pl-k"},{"start":11,"end":29,"cssClass":"pl-en"},{"start":30,"end":35,"cssClass":"pl-c1"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":20,"cssClass":"pl-c1"}],[],[{"start":4,"end":15,"cssClass":"pl-e"}],[{"start":4,"end":17,"cssClass":"pl-c1"},{"start":4,"end":17,"cssClass":"pl-c1"},{"start":19,"end":20,"cssClass":"pl-c1"}],[],[],[{"start":2,"end":3,"cssClass":"pl-ent"},{"start":5,"end":7,"cssClass":"pl-ent"}],[{"start":4,"end":14,"cssClass":"pl-c1"},{"start":4,"end":14,"cssClass":"pl-c1"},{"start":16,"end":22,"cssClass":"pl-c1"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":18,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-ent"}],[{"start":0,"end":4,"cssClass":"pl-ent"}],[{"start":2,"end":13,"cssClass":"pl-c1"},{"start":2,"end":13,"cssClass":"pl-c1"},{"start":15,"end":32,"cssClass":"pl-v"}],[{"start":2,"end":11,"cssClass":"pl-c1"},{"start":2,"end":11,"cssClass":"pl-c1"},{"start":13,"end":21,"cssClass":"pl-c1"},{"start":19,"end":21,"cssClass":"pl-k"}],[{"start":2,"end":8,"cssClass":"pl-c1"},{"start":2,"end":8,"cssClass":"pl-c1"},{"start":10,"end":13,"cssClass":"pl-c1"},{"start":11,"end":13,"cssClass":"pl-k"},{"start":14,"end":19,"cssClass":"pl-c1"},{"start":20,"end":36,"cssClass":"pl-v"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":20,"cssClass":"pl-c1"},{"start":18,"end":20,"cssClass":"pl-k"}],[{"start":2,"end":18,"cssClass":"pl-c1"},{"start":2,"end":18,"cssClass":"pl-c1"},{"start":20,"end":42,"cssClass":"pl-v"}],[],[],[{"start":0,"end":4,"cssClass":"pl-ent"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":14,"cssClass":"pl-c1"},{"start":12,"end":14,"cssClass":"pl-k"},{"start":15,"end":18,"cssClass":"pl-c1"},{"start":16,"end":18,"cssClass":"pl-k"}],[],[],[{"start":0,"end":3,"cssClass":"pl-ent"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":14,"cssClass":"pl-c1"},{"start":12,"end":14,"cssClass":"pl-k"},{"start":15,"end":19,"cssClass":"pl-c1"},{"start":17,"end":19,"cssClass":"pl-k"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":18,"cssClass":"pl-c1"}],[],[{"start":4,"end":8,"cssClass":"pl-ent"}],[{"start":4,"end":10,"cssClass":"pl-c1"},{"start":4,"end":10,"cssClass":"pl-c1"},{"start":12,"end":13,"cssClass":"pl-c1"}],[{"start":4,"end":17,"cssClass":"pl-c1"},{"start":4,"end":17,"cssClass":"pl-c1"},{"start":19,"end":20,"cssClass":"pl-c1"}],[{"start":4,"end":16,"cssClass":"pl-c1"},{"start":4,"end":16,"cssClass":"pl-c1"},{"start":18,"end":19,"cssClass":"pl-c1"}],[],[],[],[{"start":0,"end":10,"cssClass":"pl-e"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":20,"cssClass":"pl-c1"},{"start":18,"end":20,"cssClass":"pl-k"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":36,"cssClass":"pl-v"}],[{"start":2,"end":9,"cssClass":"pl-k"},{"start":10,"end":26,"cssClass":"pl-e"}],[],[{"start":2,"end":20,"cssClass":"pl-e"},{"start":21,"end":22,"cssClass":"pl-ent"}],[{"start":4,"end":14,"cssClass":"pl-c1"},{"start":4,"end":14,"cssClass":"pl-c1"},{"start":16,"end":38,"cssClass":"pl-v"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":10,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":8,"cssClass":"pl-e"}],[{"start":2,"end":11,"cssClass":"pl-c1"},{"start":2,"end":11,"cssClass":"pl-c1"},{"start":13,"end":17,"cssClass":"pl-c1"},{"start":18,"end":35,"cssClass":"pl-v"},{"start":20,"end":34,"cssClass":"pl-v"},{"start":36,"end":37,"cssClass":"pl-k"},{"start":39,"end":55,"cssClass":"pl-v"},{"start":41,"end":54,"cssClass":"pl-v"}],[{"start":2,"end":14,"cssClass":"pl-c1"},{"start":2,"end":14,"cssClass":"pl-c1"},{"start":16,"end":20,"cssClass":"pl-c1"}],[{"start":2,"end":13,"cssClass":"pl-c1"},{"start":2,"end":13,"cssClass":"pl-c1"},{"start":15,"end":19,"cssClass":"pl-c1"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":30,"cssClass":"pl-v"},{"start":31,"end":32,"cssClass":"pl-k"},{"start":33,"end":34,"cssClass":"pl-c1"}],[{"start":2,"end":14,"cssClass":"pl-c1"},{"start":2,"end":14,"cssClass":"pl-c1"},{"start":16,"end":29,"cssClass":"pl-v"},{"start":30,"end":31,"cssClass":"pl-k"},{"start":32,"end":33,"cssClass":"pl-c1"}],[{"start":2,"end":9,"cssClass":"pl-k"},{"start":10,"end":19,"cssClass":"pl-e"}],[],[{"start":2,"end":8,"cssClass":"pl-k"},{"start":9,"end":15,"cssClass":"pl-c1"},{"start":16,"end":19,"cssClass":"pl-k"},{"start":21,"end":30,"cssClass":"pl-c1"},{"start":21,"end":30,"cssClass":"pl-c1"},{"start":32,"end":41,"cssClass":"pl-v"}],[{"start":4,"end":13,"cssClass":"pl-c1"},{"start":4,"end":13,"cssClass":"pl-c1"},{"start":15,"end":19,"cssClass":"pl-c1"},{"start":20,"end":37,"cssClass":"pl-v"},{"start":22,"end":36,"cssClass":"pl-v"},{"start":38,"end":39,"cssClass":"pl-k"},{"start":41,"end":57,"cssClass":"pl-v"},{"start":43,"end":56,"cssClass":"pl-v"},{"start":58,"end":59,"cssClass":"pl-k"},{"start":60,"end":61,"cssClass":"pl-c1"}],[{"start":4,"end":17,"cssClass":"pl-c1"},{"start":4,"end":17,"cssClass":"pl-c1"},{"start":19,"end":32,"cssClass":"pl-v"}],[{"start":4,"end":16,"cssClass":"pl-c1"},{"start":4,"end":16,"cssClass":"pl-c1"},{"start":18,"end":31,"cssClass":"pl-v"}],[],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":11,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":9,"cssClass":"pl-e"},{"start":9,"end":15,"cssClass":"pl-e"}],[{"start":2,"end":9,"cssClass":"pl-ent"},{"start":11,"end":13,"cssClass":"pl-s"},{"start":11,"end":12,"cssClass":"pl-pds"},{"start":12,"end":13,"cssClass":"pl-pds"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":16,"cssClass":"pl-c1"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":13,"cssClass":"pl-c1"}],[],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":8,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[],[{"start":0,"end":7,"cssClass":"pl-e"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":16,"cssClass":"pl-c1"}],[],[],[{"start":0,"end":5,"cssClass":"pl-e"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":16,"cssClass":"pl-c1"}],[],[],[{"start":0,"end":9,"cssClass":"pl-e"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":13,"cssClass":"pl-c1"},{"start":11,"end":13,"cssClass":"pl-k"}],[{"start":2,"end":8,"cssClass":"pl-c1"},{"start":2,"end":8,"cssClass":"pl-c1"},{"start":10,"end":14,"cssClass":"pl-c1"},{"start":12,"end":14,"cssClass":"pl-k"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":23,"cssClass":"pl-c1"}],[{"start":2,"end":6,"cssClass":"pl-c1"},{"start":2,"end":6,"cssClass":"pl-c1"},{"start":8,"end":20,"cssClass":"pl-c1"}],[{"start":2,"end":9,"cssClass":"pl-c1"},{"start":2,"end":9,"cssClass":"pl-c1"},{"start":11,"end":14,"cssClass":"pl-c1"},{"start":12,"end":14,"cssClass":"pl-k"},{"start":15,"end":18,"cssClass":"pl-c1"},{"start":16,"end":18,"cssClass":"pl-k"},{"start":19,"end":22,"cssClass":"pl-c1"},{"start":20,"end":22,"cssClass":"pl-k"},{"start":23,"end":26,"cssClass":"pl-c1"},{"start":24,"end":26,"cssClass":"pl-k"}],[{"start":2,"end":16,"cssClass":"pl-c1"},{"start":2,"end":16,"cssClass":"pl-c1"},{"start":18,"end":29,"cssClass":"pl-c1"}],[],[],[],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":0,"end":2,"cssClass":"pl-c"}],[{"start":0,"end":9,"cssClass":"pl-c"}],[{"start":0,"end":3,"cssClass":"pl-c"},{"start":1,"end":3,"cssClass":"pl-c"}],[{"start":0,"end":5,"cssClass":"pl-ent"}],[{"start":2,"end":15,"cssClass":"pl-c1"},{"start":2,"end":15,"cssClass":"pl-c1"},{"start":17,"end":30,"cssClass":"pl-v"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":13,"cssClass":"pl-c1"},{"start":12,"end":13,"cssClass":"pl-k"}],[{"start":2,"end":12,"cssClass":"pl-c1"},{"start":2,"end":12,"cssClass":"pl-c1"},{"start":14,"end":31,"cssClass":"pl-v"}],[{"start":2,"end":7,"cssClass":"pl-c1"},{"start":2,"end":7,"cssClass":"pl-c1"},{"start":9,"end":26,"cssClass":"pl-v"}],[{"start":2,"end":17,"cssClass":"pl-c1"},{"start":2,"end":17,"cssClass":"pl-c1"},{"start":19,"end":27,"cssClass":"pl-c1"}],[{"start":2,"end":8,"cssClass":"pl-c1"},{"start":2,"end":8,"cssClass":"pl-c1"},{"start":10,"end":13,"cssClass":"pl-c1"},{"start":11,"end":13,"cssClass":"pl-k"},{"start":14,"end":19,"cssClass":"pl-c1"},{"start":20,"end":39,"cssClass":"pl-v"}],[{"start":2,"end":4,"cssClass":"pl-ent"}],[{"start":4,"end":5,"cssClass":"pl-ent"},{"start":5,"end":15,"cssClass":"pl-e"},{"start":16,"end":20,"cssClass":"pl-c1"}],[{"start":6,"end":22,"cssClass":"pl-c1"},{"start":6,"end":22,"cssClass":"pl-c1"},{"start":24,"end":42,"cssClass":"pl-v"}],[],[],[{"start":2,"end":4,"cssClass":"pl-ent"},{"start":6,"end":8,"cssClass":"pl-ent"}],[{"start":4,"end":11,"cssClass":"pl-c1"},{"start":4,"end":11,"cssClass":"pl-c1"},{"start":14,"end":27,"cssClass":"pl-v"},{"start":28,"end":29,"cssClass":"pl-k"},{"start":30,"end":31,"cssClass":"pl-c1"},{"start":34,"end":47,"cssClass":"pl-v"},{"start":48,"end":49,"cssClass":"pl-k"},{"start":50,"end":51,"cssClass":"pl-c1"}],[],[{"start":2,"end":4,"cssClass":"pl-ent"}],[{"start":4,"end":20,"cssClass":"pl-c1"},{"start":4,"end":20,"cssClass":"pl-c1"},{"start":22,"end":44,"cssClass":"pl-v"}],[{"start":4,"end":10,"cssClass":"pl-c1"},{"start":4,"end":10,"cssClass":"pl-c1"},{"start":12,"end":15,"cssClass":"pl-c1"},{"start":13,"end":15,"cssClass":"pl-k"},{"start":16,"end":21,"cssClass":"pl-c1"},{"start":22,"end":42,"cssClass":"pl-v"}],[],[{"start":2,"end":4,"cssClass":"pl-ent"}],[{"start":4,"end":10,"cssClass":"pl-c1"},{"start":4,"end":10,"cssClass":"pl-c1"},{"start":12,"end":15,"cssClass":"pl-c1"},{"start":13,"end":15,"cssClass":"pl-k"},{"start":16,"end":21,"cssClass":"pl-c1"},{"start":22,"end":41,"cssClass":"pl-v"}],[],[],[{"start":2,"end":10,"cssClass":"pl-k"},{"start":11,"end":22,"cssClass":"pl-en"},{"start":23,"end":33,"cssClass":"pl-v"}],[{"start":4,"end":11,"cssClass":"pl-c1"},{"start":4,"end":11,"cssClass":"pl-c1"},{"start":13,"end":18,"cssClass":"pl-c1"}],[{"start":4,"end":14,"cssClass":"pl-c1"},{"start":4,"end":14,"cssClass":"pl-c1"},{"start":16,"end":20,"cssClass":"pl-c1"}],[{"start":4,"end":30,"cssClass":"pl-c1"},{"start":4,"end":30,"cssClass":"pl-c1"},{"start":32,"end":37,"cssClass":"pl-c1"}],[{"start":12,"end":30,"cssClass":"pl-c1"},{"start":12,"end":30,"cssClass":"pl-c1"},{"start":32,"end":56,"cssClass":"pl-c1"}],[],[]],"csv":null,"csvError":null,"dependabotInfo":{"showConfigurationBanner":false,"configFilePath":null,"networkDependabotPath":"/Alexander-Taran/alexander-taran.github.com/network/updates","dismissConfigurationNoticePath":"/settings/dismiss-notice/dependabot_configuration_notice","configurationNoticeDismissed":null,"repoAlertsPath":"/Alexander-Taran/alexander-taran.github.com/security/dependabot","repoSecurityAndAnalysisPath":"/Alexander-Taran/alexander-taran.github.com/settings/security_analysis","repoOwnerIsOrg":false,"currentUserCanAdminRepo":false},"displayName":"_base.scss","displayUrl":"https://github.com/Alexander-Taran/alexander-taran.github.com/blob/master/_sass/minima/_base.scss?raw=true","headerInfo":{"blobSize":"3.93 KB","deleteInfo":{"deleteTooltip":"You must be signed in to make or propose changes"},"editInfo":{"editTooltip":"You must be signed in to make or propose changes"},"ghDesktopPath":"https://desktop.github.com","gitLfsPath":null,"onBranch":true,"shortPath":"a6f104e","siteNavLoginPath":"/login?return_to=https%3A%2F%2Fgithub.com%2FAlexander-Taran%2Falexander-taran.github.com%2Fblob%2Fmaster%2F_sass%2Fminima%2F_base.scss","isCSV":false,"isRichtext":false,"toc":null,"lineInfo":{"truncatedLoc":"282","truncatedSloc":"223"},"mode":"file"},"image":false,"isCodeownersFile":null,"isPlain":false,"isValidLegacyIssueTemplate":false,"issueTemplateHelpUrl":"https://docs.github.com/articles/about-issue-and-pull-request-templates","issueTemplate":null,"discussionTemplate":null,"language":"SCSS","languageID":329,"large":false,"loggedIn":false,"newDiscussionPath":"/Alexander-Taran/alexander-taran.github.com/discussions/new","newIssuePath":"/Alexander-Taran/alexander-taran.github.com/issues/new","planSupportInfo":{"repoIsFork":null,"repoOwnedByCurrentUser":null,"requestFullPath":"/Alexander-Taran/alexander-taran.github.com/blob/master/_sass/minima/_base.scss","showFreeOrgGatedFeatureMessage":null,"showPlanSupportBanner":null,"upgradeDataAttributes":null,"upgradePath":null},"publishBannersInfo":{"dismissActionNoticePath":"/settings/dismiss-notice/publish_action_from_dockerfile","dismissStackNoticePath":"/settings/dismiss-notice/publish_stack_from_file","releasePath":"/Alexander-Taran/alexander-taran.github.com/releases/new?marketplace=true","showPublishActionBanner":false,"showPublishStackBanner":false},"rawBlobUrl":"https://github.com/Alexander-Taran/alexander-taran.github.com/raw/master/_sass/minima/_base.scss","renderImageOrRaw":false,"richText":null,"renderedFileInfo":null,"shortPath":null,"tabSize":8,"topBannersInfo":{"overridingGlobalFundingFile":false,"globalPreferredFundingPath":null,"repoOwner":"Alexander-Taran","repoName":"alexander-taran.github.com","showInvalidCitationWarning":false,"citationHelpUrl":"https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-citation-files","showDependabotConfigurationBanner":false,"actionsOnboardingTip":null},"truncated":false,"viewable":true,"workflowRedirectUrl":null,"symbols":{"timedOut":false,"notAnalyzed":true,"symbols":[]}},"copilotInfo":null,"copilotAccessAllowed":false,"csrf_tokens":{"/Alexander-Taran/alexander-taran.github.com/branches":{"post":"FpJTQicEieYJjHp-icUWSAhX2BL0VWHG7RR5D8l271hjUcTOgWvmqpKSX63mwcGydFZEat1bXgs4JbM4fjnw6Q"},"/repos/preferences":{"post":"1EK5GI5BeRWPR_7A7MzMf7SPESw_TXgTxMU3PjKW84uIyfx_91BmYRojksrH2-GqCuDGV4hhxDGV0_7MTA913w"}}},"title":"alexander-taran.github.com/_sass/minima/_base.scss at master · Alexander-Taran/alexander-taran.github.com"}
+html {
+  font-size: $base-font-size;
+}
+
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+
+}
+
+
+
+/**
+ * Basic styling
+ */
+body {
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background-color: $background-color;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-feature-settings: "kern" 1;
+     -moz-font-feature-settings: "kern" 1;
+       -o-font-feature-settings: "kern" 1;
+          font-feature-settings: "kern" 1;
+  font-kerning: normal;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  overflow-wrap: break-word;
+}
+
+
+
+/**
+ * Set `margin-bottom` to maintain vertical rhythm
+ */
+h1, h2, h3, h4, h5, h6,
+p, blockquote, pre,
+ul, ol, dl, figure,
+%vertical-rhythm {
+  margin-bottom: $spacing-unit / 2;
+}
+
+hr {
+  margin-top: $spacing-unit;
+  margin-bottom: $spacing-unit;
+}
+
+/**
+ * `main` element
+ */
+main {
+  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+}
+
+
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+
+/**
+ * Figures
+ */
+figure > img {
+  display: block;
+}
+
+figcaption {
+  font-size: $small-font-size;
+}
+
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+
+
+/**
+ * Headings
+ */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: $base-font-weight;
+}
+
+
+
+/**
+ * Links
+ */
+a {
+  color: $link-base-color;
+  text-decoration: none;
+
+  &:visited {
+    color: $link-visited-color;
+  }
+
+  &:hover {
+    color: $link-hover-color;
+    text-decoration: underline;
+  }
+
+  .social-media-list &:hover {
+    text-decoration: none;
+
+    .username {
+      text-decoration: underline;
+    }
+  }
+}
+
+
+/**
+ * Blockquotes
+ */
+blockquote {
+  color: $brand-color;
+  border-left: 4px solid $border-color-01;
+  padding-left: $spacing-unit / 2;
+  @include relative-font-size(1.125);
+  font-style: italic;
+
+  > :last-child {
+    margin-bottom: 0;
+  }
+
+  i, em {
+    font-style: normal;
+  }
+}
+
+
+
+/**
+ * Code formatting
+ */
+pre,
+code {
+  font-family: $code-font-family;
+  font-size: 0.9375em;
+  border: 1px solid $border-color-01;
+  border-radius: 3px;
+  background-color: $code-background-color;
+}
+
+code {
+  padding: 1px 5px;
+}
+
+pre {
+  padding: 8px 12px;
+  overflow-x: auto;
+
+  > code {
+    border: 0;
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+.highlight {
+  border-radius: 3px;
+  background: $code-background-color;
+  @extend %vertical-rhythm;
+
+  .highlighter-rouge & {
+    background: $code-background-color;
+  }
+}
+
+
+
+/**
+ * Wrapper
+ */
+.wrapper {
+  max-width: calc(#{$content-width} - (#{$spacing-unit}));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: $spacing-unit / 2;
+  padding-left: $spacing-unit / 2;
+  @extend %clearfix;
+
+  @media screen and (min-width: $on-large) {
+    max-width: calc(#{$content-width} - (#{$spacing-unit} * 2));
+    padding-right: $spacing-unit;
+    padding-left: $spacing-unit;
+  }
+}
+
+
+
+/**
+ * Clearfix
+ */
+%clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/**
+ * Icons
+ */
+
+.orange {
+  color: #f66a0a;
+}
+
+.grey {
+  color: #828282;
+}
+
+.svg-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  fill: currentColor;
+  padding: 5px 3px 2px 5px;
+  vertical-align: text-bottom;
+}
+
+
+/**
+ * Tables
+ */
+table {
+  margin-bottom: $spacing-unit;
+  width: 100%;
+  text-align: $table-text-align;
+  color: $table-text-color;
+  border-collapse: collapse;
+  border: 1px solid $table-border-color;
+  tr {
+    &:nth-child(even) {
+      background-color: $table-zebra-color;
+    }
+  }
+  th, td {
+    padding: ($spacing-unit / 3) ($spacing-unit / 2);
+  }
+  th {
+    background-color: $table-header-bg-color;
+    border: 1px solid $table-header-border;
+  }
+  td {
+    border: 1px solid $table-border-color;
+  }
+
+  @include media-query($on-laptop) {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+            -ms-overflow-style: -ms-autohiding-scrollbar;
+  }
+}
