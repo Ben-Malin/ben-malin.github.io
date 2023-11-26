@@ -2,7 +2,8 @@
 # Only the main Sass file needs front matter (the dashes are enough) 
 ---
 
-@import "minima/skins/classic";
+//@import "minima/skins/classic";
+@import "minimal/skins/catppuccinLatte";
 
 :root {
   --brand-color :           #{$brand-color};
