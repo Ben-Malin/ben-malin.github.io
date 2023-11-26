@@ -1,7 +1,10 @@
 ---
 ---
 
+$color-scheme-dark:   true !default;
 $dm-background-color: #181818 !default;
-$background-color: #181818 !default;
+$lm-background-color: #181818 !default;
+$background-color:    #181818 !default;
+$brand-color:         #181818 !default;
 
 @import "{{ site.theme }}";
