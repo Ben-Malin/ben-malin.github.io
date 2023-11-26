@@ -20,6 +20,9 @@ linkedin_username: "ben-malin"
 #########################################################################################
 theme: "minima"
 
+minima:
+  skin: dark
+
 rss: rss
 
 # kramdown:
