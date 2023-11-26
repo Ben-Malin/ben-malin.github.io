@@ -18,8 +18,8 @@ linkedin_username: "ben-malin"
 #########################################################################################
 ######### Nothing below needs to be changed (unless you know what you're doing) #########
 #########################################################################################
-#theme: "minima"
-remote_theme: jekyll/minima
+theme: "minima"
+#remote_theme: jekyll/minima
 
 minima:
   skin: dark
