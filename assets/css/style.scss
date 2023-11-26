@@ -59,7 +59,7 @@ $table-border-color:    var(--table-border-color,$table-border-color);
 
 @media (prefers-color-scheme: light) {
 
-  @import "minimal/skins/catppuccinLatte";
+  @import "minima/skins/catppuccinLatte";
 
   :root {
     --brand-color :           #{$brand-color};
