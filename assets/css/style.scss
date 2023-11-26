@@ -60,7 +60,8 @@ $table-border-color:    var(--table-border-color,$table-border-color);
 
 @media (prefers-color-scheme: dark) {
 
-  @import "minima/skins/dark";
+  //@import "minima/skins/dark";
+  @import "minima/skins/catppuccinMocha";
 
   :root {
     --brand-color :           #{$brand-color};
