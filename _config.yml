@@ -27,7 +27,7 @@ rss: rss
 #     disable: true
 
 showcaseImages: "/images/showcase/"
-showcaseThumbs: "/images/showcase/thumbs/"
+showcaseThumbs: "/images/showcaseThumbnails/"
     
 plugins:
   - jekyll-feed
