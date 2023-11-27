@@ -26,7 +26,7 @@ And here are some good teams, Leuven in 2023 and Delft in 2019:
 ![leuven Wheel](/images/solarCars/leuvenWheel.jpg)  
 ![delft Wheel](/images/solarCars/delftWheel.jpg)
 
-The AUSRT wheel is about as bad as it gets for drag, completely uncovered wheel spokes spinning around in a wide open fairing.
+The AUSRT wheel is about as bad as it gets for drag, completely uncovered wheel spokes spinning around in a wide open fairing (AUSRT definitely weren't the only team with wheels like this).
 The result is additional rolling resistance from aerodynamic damping inside the fairing, as well as a whole bunch of dirty flow making its way out through the wheel cut-outs and producing messy flow along the bottom of the fairing.
 
 - Uncovered spokes are bad  
