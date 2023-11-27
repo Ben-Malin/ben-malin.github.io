@@ -1,9 +1,8 @@
+
 <div class ="image-gallery">
   {% assign sorted = site.static_files | sort: 'date' | reverse %}
   {% for file in sorted %}
-  <p>{{ file }}</p>
   {% if file.path contains include.folder %}
-  <!-- print the file path -->
   {% if file.extname == '.jpg' %}
     {% assign filenameparts = file.path | split: "/" %}
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
@@ -14,8 +13,3 @@
     {% endif %}
   {% endfor %}
  </div>
-
-<!-- placeholder text -->
-<div class="text-center">
-  <p>Placeholder text</p>
-</div>
