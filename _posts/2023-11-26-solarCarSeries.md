@@ -7,11 +7,11 @@ tags: Solar
 
 ---
 
-Solar Car Aero Series (work in progress): 
-[Beginner guide to Solar Car CFD]()
-[Wheel covers]()
-[A winning car]()
-[Crosswinds and how to not flip your car]()
+Solar Car Aero Series: 
+[Beginner guide to Solar Car CFD (WIP)]()  
+[Wheel covers (WIP)]()  
+[A winning car (WIP)]()  
+[Crosswinds and how to not flip your car (WIP)]()  
 
 ---
 
@@ -29,7 +29,7 @@ I wanted to slowly build up a small series of posts on solar car aerodynamics, f
 A quick summary of the race itself if you're a CFD person and not a solar car person.  
 
 Every 2 years, teams from all over the world fly to Darwin Australia to compete in the Bridgestone World Solar Challenge.
-In the challeger class, the teams race to get to Adelaide, a distance of 3000km, powered only by what they can collect from a 5 \\m^2\\ solar array.
+In the challeger class, the teams race to get to Adelaide, a distance of 3000km, powered only by what they can collect from a 5 \\( m^2 \\) solar array.
 The cars have a set of regulations to which they must be designed, but compared to other motorsports you get a lot of freedom to get creative with designs.  
 To win the BWSC, you need to have the best:
 - Solar Array
@@ -49,4 +49,13 @@ With these blog posts, I want to talk about some of the cool stuff the top teams
 I've even got a few ideas of how to improve the aero of even the top cars that I might share on here.  
 I'd also love to talk with current solar car teams - get in touch if you want me to take a look at your design, or just nerd out over aero!  
 
+### My involvement
 
+I studied Mechanical and Aerospace Engineering at the Univerisity of Adelaide, where students in their final year need to work on an honours project.  
+In 2016, I wound up on the aerodynamics team at AUSRT, designing what would become Lumen II. I then accompanied the team on the 2017 and 2019 races.  
+
+![Lumen II](/images/solarCars/ausrt.jpg)
+
+Now, while the 2017 race was a disaster for the team, and I made plenty of mistakes in the design of Lumen II, it was a fantastic experience. 
+I found I had a knack for CFD, and made industry connections which later turned into a consulting job and the beginning of a career in wind engineering.  
+Nine years later I've improved a bit at CFD, and it's fun to look back every now and then at where it started.
