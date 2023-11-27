@@ -9,7 +9,7 @@ tags: Solar
 
 **Solar Car Aero Series:**  
 [Beginner guide to Solar Car CFD (WIP)]()  
-[Wheel covers (WIP)](/_posts/2023-11-27-solarCarWheels.html)  
+[Wheel covers (WIP)](/23/11/27/solarCarWheels.html)  
 [A winning car (WIP)]()  
 [Crosswinds and how to not flip your car (WIP)]()  
 
@@ -19,11 +19,11 @@ tags: Solar
 
 Walking around Victoria Square after a race and looking at each of the Challenger cars, it's very easy to sort the lower teams from the top of the pack - just look at the wheels.
 
-Here's a team I'm allowed to (lovingly) make fun of, my alma mater AUSRT in 2023. 
+Here's a team I'm allowed to (lovingly) make fun of, my alma mater AUSRT in 2023.  
 ![AUSRT Wheel](/images/solarCars/ausrtWheel.jpg)
 
-And here are some good teams, Leuven in 2023 and Delft in 2019:
-![leuven Wheel](/images/solarCars/leuvenWheel.jpg)
+And here are some good teams, Leuven in 2023 and Delft in 2019:  
+![leuven Wheel](/images/solarCars/leuvenWheel.jpg)  
 ![delft Wheel](/images/solarCars/delftWheel.jpg)
 
 The AUSRT wheel is about as bad as it gets for drag, completely uncovered wheel spokes spinning around in a wide open fairing.
