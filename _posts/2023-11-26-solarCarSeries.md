@@ -1,5 +1,5 @@
 ---
-description: Solar car aerodynamics
+description: Solar Car Aerodynamics
 tags: Solar
 ---
 
@@ -7,11 +7,11 @@ tags: Solar
 
 ---
 
-Solar Car Aero Series: 
+Solar Car Aero Series (work in progress): 
+[Beginner guide to Solar Car CFD]()
+[Wheel covers]()
 [A winning car]()
-[Cover your wheels]()
-[(don't) do a barrel roll]()
-[Doing good CFD]()
+[Crosswinds and how to not flip your car]()
 
 ---
 

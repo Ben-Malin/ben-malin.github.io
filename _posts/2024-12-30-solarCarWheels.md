@@ -42,6 +42,6 @@ Why then do the bottom teams often not design their wheels this way? My impressi
 
 ---
 
-In some senses, there's not too much more to discuss here - there's not really any doubt as to what the optimal design is, the top teams figured it out long ago. 
+In some senses, there's not much more to discuss - there's no doubt as to what the optimal design is, the top teams figured it out long ago. 
 However, I do think that there's still some small performance gains to be found here, and I want to drive home to the teams towards the back of the pack just how important the wheels are.
 
