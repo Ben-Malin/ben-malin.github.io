@@ -9,7 +9,7 @@ tags: Solar
 
 **Solar Car Aero Series:**  
 [Beginner guide to Solar Car CFD (WIP)]()  
-[Wheel covers (WIP)]()  
+[Wheel covers (WIP)](/_posts/2023-11-27-solarCarWheels.html)  
 [A winning car (WIP)]()  
 [Crosswinds and how to not flip your car (WIP)]()  
 

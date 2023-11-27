@@ -7,11 +7,11 @@ tags: Solar
 
 ---
 
-Solar Car Aero Series: 
-[A winning car]()
-[Cover your wheels]()
-[(don't) do a barrel roll]()
-[Doing good CFD]()
+**Solar Car Aero Series:**  
+[Beginner guide to Solar Car CFD (WIP)]()  
+[Wheel covers (WIP)](/_posts/2023-11-27-solarCarWheels.html)  
+[A winning car (WIP)]()  
+[Crosswinds and how to not flip your car (WIP)]()  
 
 ---
 
@@ -45,3 +45,4 @@ Why then do the bottom teams often not design their wheels this way? My impressi
 In some senses, there's not much more to discuss - there's no doubt as to what the optimal design is, the top teams figured it out long ago. 
 However, I do think that there's still some small performance gains to be found here, and I want to drive home to the teams towards the back of the pack just how important the wheels are.
 
+**Work in progress: Wheel CFD Case**
