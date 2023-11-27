@@ -7,7 +7,7 @@ tags: Solar
 
 ---
 
-Solar Car Aero Series: 
+**Solar Car Aero Series:**  
 [Beginner guide to Solar Car CFD (WIP)]()  
 [Wheel covers (WIP)]()  
 [A winning car (WIP)]()  
@@ -56,6 +56,6 @@ In 2016, I wound up on the aerodynamics team at AUSRT, designing what would beco
 
 ![Lumen II](/images/solarCars/ausrt.jpg)
 
-Now, while the 2017 race was a disaster for the team, and I made plenty of mistakes in the design of Lumen II, it was a fantastic experience. 
+While the 2017 race was a disaster for the team, and I made plenty of mistakes in the design of Lumen II, it was a fantastic experience. 
 I found I had a knack for CFD, and made industry connections which later turned into a consulting job and the beginning of a career in wind engineering.  
 Nine years later I've improved a bit at CFD, and it's fun to look back every now and then at where it started.
