@@ -29,23 +29,26 @@ Red indicates \\(k\omega\\), blue indicates \\(k\epsilon\\)
 
 ### How it works:
 
-The shear stress transport model calculates each of the model constants as a blend:
+The shear stress transport model calculates each of the model constants as a blend:  
+
 $$
 \phi = F_1\phi_1 + (1-F_1)\phi_2
-$$
+$$  
+
 Where \\( \phi_1 \\) is \\( k-\omega \\) model constant and \\( \phi_2 \\) is a corresponding \\( k-\epsilon \\) constant
 
-The blending parameter \\( F_1 \\) is given by:
+The blending parameter \\( F_1 \\) is given by:  
+
 $$
 F_1 = tanh(arg_1^4)
-$$
+$$  
 
 $$
 arg_1 = min \left[ max \left(\frac{\sqrt{k}}{\beta^* \omega d},\frac{500 \nu}{d^2 \omega}\right), \frac{4\rho\sigma_{\omega 2}k}{CD_{k\omega}d^2} \right]
 $$
 
 $$
-CD_{k\omega} = max \left( 2\rho\sigma_{\omega 2}\frac{1}{\omega}\frac{\partial k}{partial x_j}\frac{\partial \omega}{\partial x_j},10^{-20}\right)
+CD_{k\omega} = max \left( 2\rho\sigma_{\omega 2}\frac{1}{\omega}\frac{\partial k}{\partial x_j}\frac{\partial \omega}{\partial x_j},10^{-20}\right)
 $$
 
 Each of these parameters is calculated by the turbulence model. Unfortunately, they're calculated as private functions, which means we can't just create a pointer or reference to the turbulence model
@@ -62,13 +65,15 @@ Instead, I have simply duplicated the functions from the turbulence model. It's 
 // Function that returns a volScalarField as a tmp<>
 Foam::tmp<Foam::volScalarField> Foam::functionObjects::SSTBlending::F1
 (
-    const volScalarField& k,
+    // Function inputs
+    const volScalarField& k, // reference to the tke field
     const volScalarField& omega,
     const volScalarField& mu,
-    const scalar alphaOmega2,
+    const scalar alphaOmega2, // Model constants
     const scalar Cmu
 )
 {
+    // For incompressible, just set rho to 1 so the units come out right
     const dimensionedScalar rho("rho",dimDensity,1.0);
 
     volScalarField CDkOmega
