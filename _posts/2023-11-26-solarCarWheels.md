@@ -3,7 +3,7 @@ description: Solar car aerodynamics
 tags: Solar
 ---
 
-## Solar Car Aero Series
+## Solar Car Aero Series - Wheel Covers
 
 ---
 
