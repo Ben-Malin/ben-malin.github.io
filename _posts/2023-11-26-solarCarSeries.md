@@ -25,7 +25,7 @@ I wanted to slowly build up a small series of posts on solar car aerodynamics, f
 - For CFD people otherwise not interested in solar cars, there might be some good CFD content in here for you  
 
 ![solar car wake](/images/showcase/solarCarWake.png)
-*Total pressure in the wake of a monohull car*
+*Total pressure in the wake of a monohull car*  
 
 ### The Race
 

@@ -28,6 +28,7 @@ rss: rss
 
 showcaseImages: "/images/showcase/"
 showcaseThumbs: "/images/showcaseThumbnails/"
+showcaseDescriptions: "/showcase/"
     
 plugins:
   - jekyll-feed

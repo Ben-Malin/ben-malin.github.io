@@ -7,8 +7,10 @@
     {% assign filenameparts = file.path | split: "/" %}
       {% assign filename = filenameparts | last | replace: file.extname,"" %}
       {% assign thumbname = filename | append: ".png" %}
-       <div class="box"><a href="{{ file.path | relative_url }}" title="{{ filename }}">
-         <img src="{{ site.showcaseThumbs }}{{thumbname }} " alt="{{ filename }}"  class="img-gallery" />
+      {% assign descname  = filename | append: ".md" %}
+       <!-- <div class="box"><a href="{{ file.path | relative_url }}" title="{{ filename }}"> -->
+       <div class="box"><a href="{{ site.showcaseDescriptions }}{{ descname }}" title="{{ filename }}">
+         <img src="{{ site.showcaseThumbs }}{{ thumbname }} " alt="{{ filename }}"  class="img-gallery" />
        </a></div>
       {% endif %}
     {% endif %}
