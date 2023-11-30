@@ -23,9 +23,9 @@ for f in ./showcase/*; do
         # use a frame near the end of the video
         frameIndex=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 $f | awk '{print int($0 - 2)}')
         ffmpeg -i $f -vf "select=eq(n\,$frameIndex)" -vframes 1 -q:v 2 ./showcaseThumbnails/$(basename $f .mp4).png
-        convert ./showcaseThumbnails/$(basename $f .mp4).png -resize 200x200 ./showcaseThumbnails/$(basename $f .mp4).png
+        convert ./showcaseThumbnails/$(basename $f .mp4).png -resize 400x400 ./showcaseThumbnails/$(basename $f .mp4).png
     else
-        convert $f -resize 200x200 ./showcaseThumbnails/$(basename $f)
+        convert $f -resize 400x400 $f ./showcaseThumbnails/$(basename $f)
         # if not a png, convert
         if [[ $f != *.png ]]; then
             convert ./showcaseThumbnails/$(basename $f) ./showcaseThumbnails/$(basename $f .jpg).png
