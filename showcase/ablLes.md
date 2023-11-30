@@ -1,6 +1,5 @@
 ---
-title: ablLes
-nav_exclude: true
+exclude_from_nav: true
 ---
 
 ![ABL LES](/images/showcase/ablLes.mp4)
