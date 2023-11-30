@@ -1,0 +1,27 @@
+---
+layout: default
+video_src: ""
+---
+
+<style>
+  .video-container {
+    max-width: 100%;
+  }
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+</style>
+
+<div class="video-container">
+  <video controls>
+    <source src="{{ page.video_src }}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
+<div class="markdown-content">
+  {{ content }}
+</div>
+

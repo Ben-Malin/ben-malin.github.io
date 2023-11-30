@@ -1,23 +1,8 @@
 ---
+layout: galleryVid
 exclude_from_nav: true
+video_src: "/images/showcase/ablLes.mp4"
 ---
-
-<style>
-  .video-container {
-    max-width: 100%;
-  }
-
-  video {
-    width: 100%;
-    height: auto;
-  }
-</style>
-
-<div class="video-container">
-  <video controls>
-    <source src="/images/showcase/ablLes.mp4" type="video/mp4">
-  </video>
-<\div>
 
 --- 
 
