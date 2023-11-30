@@ -9,7 +9,12 @@ for f in ./showcase/*; do
 
     # check if thumbnail already exists and prompt to overwrite
     # This prevents clogging the git history
-    if [[ -f ./showcaseThumbnails/$(basename $f) ]]; then
+    
+    # strip the extension from the filename
+    fext=${f##*/}
+    fname=${fext%.*}
+
+    if [[ -f ./showcaseThumbnails/$fname.png ]]; then
         read -p "Overwrite ./showcaseThumbnails/$(basename $f)? (y/n) " -n 1 -r
         echo
         if [[ $REPLY =~ ^[Yy]$ ]]; then
@@ -25,7 +30,7 @@ for f in ./showcase/*; do
         ffmpeg -i $f -vf "select=eq(n\,$frameIndex)" -vframes 1 -q:v 2 ./showcaseThumbnails/$(basename $f .mp4).png
         convert ./showcaseThumbnails/$(basename $f .mp4).png -resize 400x400 ./showcaseThumbnails/$(basename $f .mp4).png
     else
-        convert $f -resize 400x400 $f ./showcaseThumbnails/$(basename $f)
+        convert $f -resize 400x400 ./showcaseThumbnails/$(basename $f)
         # if not a png, convert
         if [[ $f != *.png ]]; then
             convert ./showcaseThumbnails/$(basename $f) ./showcaseThumbnails/$(basename $f .jpg).png
