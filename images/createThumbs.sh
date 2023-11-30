@@ -3,9 +3,26 @@
 # for every file in ./showcase, create a thumbnail in ./showcaseThumbnails
 # If the file is an mp4, use the second frame
 
+# prompt user to overwrite thumbnails if they exist
+
 for f in ./showcase/*; do
+
+    # check if thumbnail already exists and prompt to overwrite
+    # This prevents clogging the git history
+    if [[ -f ./showcaseThumbnails/$(basename $f) ]]; then
+        read -p "Overwrite ./showcaseThumbnails/$(basename $f)? (y/n) " -n 1 -r
+        echo
+        if [[ $REPLY =~ ^[Yy]$ ]]; then
+            rm ./showcaseThumbnails/$(basename $f)
+        else
+            continue
+        fi
+    fi
+
     if [[ $f == *.mp4 ]]; then
-        ffmpeg -i $f -vf "select=eq(n\,1)" -vframes 1 -q:v 2 ./showcaseThumbnails/$(basename $f .mp4).png
+        # use a frame near the end of the video
+        frameIndex=$(ffprobe -v error -select_streams v:0 -show_entries stream=nb_frames -of default=noprint_wrappers=1:nokey=1 $f | awk '{print int($0 - 2)}')
+        ffmpeg -i $f -vf "select=eq(n\,$frameIndex)" -vframes 1 -q:v 2 ./showcaseThumbnails/$(basename $f .mp4).png
         convert ./showcaseThumbnails/$(basename $f .mp4).png -resize 200x200 ./showcaseThumbnails/$(basename $f .mp4).png
     else
         convert $f -resize 200x200 ./showcaseThumbnails/$(basename $f)
