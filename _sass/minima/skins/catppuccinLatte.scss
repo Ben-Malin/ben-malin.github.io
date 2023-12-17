@@ -1,15 +1,16 @@
-$catBase:  #eff1f5;
-$catText:  #4c4f69;
+$catBase:    #eff1f5;
+$catText:    #4c4f69;
 $catOverlay: #9ca0b0;
+$catCrust:   #dce0e8;
 $catSurface: #ccd0da;
-$catTeal:  #179299;
-$catBlue:  #1e66f5;
-$catMauve: #8839ef;
-$catRed:   #d20f39;
-$catGreen: #40a02b;
-$catYellow: #df8e1d;
-$catPeach: #fe640b;
-$catSky:   #04a5e5;
+$catTeal:    #179299;
+$catBlue:    #1e66f5;
+$catMauve:   #8839ef;
+$catRed:     #d20f39;
+$catGreen:   #40a02b;
+$catYellow:  #df8e1d;
+$catPeach:   #fe640b;
+$catSky:     #04a5e5;
 
 $brand-color:           $catTeal !default; //#828282 !default;
 $brand-color-light:     lighten($brand-color, 40%) !default;
@@ -19,7 +20,7 @@ $site-title-color:      $brand-color-dark !default;
 
 $text-color:            $catText !default; 
 $background-color:      $catBase !default;
-$code-background-color: $catSurface !default;
+$code-background-color: $catCrust !default;
 
 $link-base-color:       $catBlue !default;
 $link-visited-color:    darken($link-base-color, 15%) !default;
@@ -45,14 +46,14 @@ $table-border-color:    $border-color-01 !default;
   .k     { color: $catMauve; font-weight: bold } // Keyword
   .o     { color: $catSky; font-weight: bold } // Operator
   .cm    { color: $catOverlay; font-style: italic } // Comment.Multiline
-  .cp    { color: #999; font-weight: bold } // Comment.Preproc
+  .cp    { color: $catOverlay; font-weight: bold } // Comment.Preproc
   .c1    { color: $catOverlay; font-style: italic } // Comment.Single
-  .cs    { color: #999; font-weight: bold; font-style: italic } // Comment.Special
+  .cs    { color: $catOverlay; font-weight: bold; font-style: italic } // Comment.Special
   .gd    { color: #000; background-color: #fdd } // Generic.Deleted
   .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
   .ge    { font-style: italic } // Generic.Emph
   .gr    { color: #a00 } // Generic.Error
-  .gh    { color: #999 } // Generic.Heading
+  .gh    { color: $catOverlay } // Generic.Heading
   .gi    { color: #000; background-color: #dfd } // Generic.Inserted
   .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
   .go    { color: #888 } // Generic.Output
@@ -93,8 +94,8 @@ $table-border-color:    $border-color-01 !default;
   .sx    { color: $catGreen } // Literal.String.Other
   .sr    { color: $catGreen } // Literal.String.Regex
   .s1    { color: $catGreen } // Literal.String.Single
-  .ss    { color: #990073 } // Literal.String.Symbol
-  .bp    { color: #999 } // Name.Builtin.Pseudo
+  .ss    { color: $catGreen } // Literal.String.Symbol
+  .bp    { color: $catOverlay } // Name.Builtin.Pseudo
   .vc    { color: $catYellow } // Name.Variable.Class
   .vg    { color: $catYellow } // Name.Variable.Global
   .vi    { color: $catYellow } // Name.Variable.Instance
