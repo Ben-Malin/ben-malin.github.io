@@ -1,59 +1,59 @@
-$catBase:    #1e1e2e; //#eff1f5;
-$catText:    #cdd6f4; //#4c4f69;
-$catOverlay: #6c7086; //#9ca0b0;
-$catCrust:   #11111b; //#dce0e8;
-$catSurface: #313244; //#ccd0da;
-$catTeal:    #94e2d5; //#179299;
-$catBlue:    #89b4fa; //#1e66f5;
-$catMauve:   #cba6f7; //#8839ef;
-$catRed:     #f38ba8; //#d20f39;
-$catGreen:   #a6e3a1; //#40a02b;
-$catYellow:  #f9e2af; //#df8e1d;
-$catPeach:   #fab387; //#fe640b;
-$catSky:     #89dceb; //#04a5e5;
+$darkcatBase:    #1e1e2e; //#eff1f5;
+$darkcatText:    #cdd6f4; //#4c4f69;
+$darkcatOverlay: #6c7086; //#9ca0b0;
+$darkcatCrust:   #11111b; //#dce0e8;
+$darkcatSurface: #313244; //#ccd0da;
+$darkcatTeal:    #94e2d5; //#179299;
+$darkcatBlue:    #89b4fa; //#1e66f5;
+$darkcatMauve:   #cba6f7; //#8839ef;
+$darkcatRed:     #f38ba8; //#d20f39;
+$darkcatGreen:   #a6e3a1; //#40a02b;
+$darkcatYellow:  #f9e2af; //#df8e1d;
+$darkcatPeach:   #fab387; //#fe640b;
+$darkcatSky:     #89dceb; //#04a5e5;
 
-$brand-color:           $catTeal !default; //#828282 !default;
-$brand-color-light:     lighten($brand-color, 40%) !default;
-$brand-color-dark:      darken($brand-color, 25%) !default;
+$brand-color:           $darkcatTeal ; //#828282 ;
+$brand-color-light:     lighten($brand-color, 40%) ;
+$brand-color-dark:      darken($brand-color, 25%) ;
 
-$site-title-color:      $brand-color-dark !default;
+$site-title-color:      $brand-color-light ;
 
-$text-color:            $catText !default; 
-$background-color:      $catBase !default;
-$code-background-color: $catCrust !default;
+$text-color:            $darkcatText ; 
+$background-color:      $darkcatBase ;
+$code-background-color: $darkcatCrust ;
 
-$link-base-color:       $catBlue !default;
-$link-visited-color:    darken($link-base-color, 15%) !default;
-$link-hover-color:      $text-color !default;
+$link-base-color:       $darkcatBlue ;
+$link-visited-color:    darken($link-base-color, 15%) ;
+$link-hover-color:      $text-color ;
 
-$border-color-01:       $brand-color-light !default;
-$border-color-02:       lighten($brand-color, 35%) !default;
-$border-color-03:       $brand-color-dark !default;
+$border-color-01:       $brand-color-dark ;
+$border-color-02:       $brand-color-light ;
+$border-color-03:       $brand-color ;
 
-$table-text-color:      lighten($text-color, 18%) !default;
-$table-zebra-color:     lighten($brand-color, 46%) !default;
-$table-header-bg-color: lighten($brand-color, 43%) !default;
-$table-header-border:   lighten($brand-color, 37%) !default;
-$table-border-color:    $border-color-01 !default;
+$table-text-color:      $darkcatText ;
+$table-zebra-color:     lighten($brand-color, 4%) ;
+$table-header-bg-color: lighten($brand-color, 10%) ;
+$table-header-border:   lighten($brand-color, 21%) ;
+$table-border-color:    $border-color-01 ;
 
 
 // Syntax highlighting styles should be adjusted appropriately for every "skin"
 // ----------------------------------------------------------------------------
 
 .highlight {
-  .c     { color: $catOverlay; font-style: italic } // Comment
-  .err   { color: $catRed; background-color: #e3d2d2 } // Error
-  .k     { color: $catMauve; font-weight: bold } // Keyword
-  .o     { color: $catSky; font-weight: bold } // Operator
-  .cm    { color: $catOverlay; font-style: italic } // Comment.Multiline
-  .cp    { color: $catOverlay; font-weight: bold } // Comment.Preproc
-  .c1    { color: $catOverlay; font-style: italic } // Comment.Single
-  .cs    { color: $catOverlay; font-weight: bold; font-style: italic } // Comment.Special
+  .c     { color: $darkcatOverlay; font-style: italic } // Comment
+  .err   { color: $darkcatRed; background-color: #e3d2d2 } // Error
+  .k     { color: $darkcatMauve; font-weight: bold } // Keyword
+  .o     { color: $darkcatSky; font-weight: bold } // Operator
+  .cm    { color: $darkcatOverlay; font-style: italic } // Comment.Multiline
+  .cp    { color: $darkcatOverlay; font-weight: bold } // Comment.Preproc
+  .c1    { color: $darkcatOverlay; font-style: italic } // Comment.Single
+  .cs    { color: $darkcatOverlay; font-weight: bold; font-style: italic } // Comment.Special
   .gd    { color: #000; background-color: #fdd } // Generic.Deleted
   .gd .x { color: #000; background-color: #faa } // Generic.Deleted.Specific
   .ge    { font-style: italic } // Generic.Emph
   .gr    { color: #a00 } // Generic.Error
-  .gh    { color: $catOverlay } // Generic.Heading
+  .gh    { color: $darkcatOverlay } // Generic.Heading
   .gi    { color: #000; background-color: #dfd } // Generic.Inserted
   .gi .x { color: #000; background-color: #afa } // Generic.Inserted.Specific
   .go    { color: #888 } // Generic.Output
@@ -65,39 +65,39 @@ $table-border-color:    $border-color-01 !default;
   .kd    { font-weight: bold } // Keyword.Declaration
   .kp    { font-weight: bold } // Keyword.Pseudo
   .kr    { font-weight: bold } // Keyword.Reserved
-  .kt    { color: $catYellow; font-weight: bold } // Keyword.Type
-  .m     { color: $catPeach } // Literal.Number
-  .s     { color: $catGreen } // Literal.String
-  .na    { color: $catYellow } // Name.Attribute
+  .kt    { color: $darkcatYellow; font-weight: bold } // Keyword.Type
+  .m     { color: $darkcatPeach } // Literal.Number
+  .s     { color: $darkcatGreen } // Literal.String
+  .na    { color: $darkcatYellow } // Name.Attribute
   .nb    { color: #0086B3 } // Name.Builtin
-  .nc    { color: $catYellow; font-weight: bold } // Name.Class
-  .no    { color: $catPeach } // Name.Constant
-  .ni    { color: $catYellow } // Name.Entity
+  .nc    { color: $darkcatYellow; font-weight: bold } // Name.Class
+  .no    { color: $darkcatPeach } // Name.Constant
+  .ni    { color: $darkcatYellow } // Name.Entity
   .ne    { color: #900; font-weight: bold } // Name.Exception
   .nf    { color: #900; font-weight: bold } // Name.Function
   .nn    { color: #555 } // Name.Namespace
-  .nt    { color: $catYellow } // Name.Tag
-  .nv    { color: $catYellow } // Name.Variable
+  .nt    { color: $darkcatYellow } // Name.Tag
+  .nv    { color: $darkcatYellow } // Name.Variable
   .ow    { font-weight: bold } // Operator.Word
   .w     { color: #bbb } // Text.Whitespace
-  .mf    { color: $catPeach } // Literal.Number.Float
-  .mh    { color: $catPeach } // Literal.Number.Hex
-  .mi    { color: $catPeach } // Literal.Number.Integer
-  .mo    { color: $catPeach } // Literal.Number.Oct
-  .sb    { color: $catGreen } // Literal.String.Backtick
-  .sc    { color: $catGreen } // Literal.String.Char
-  .sd    { color: $catGreen } // Literal.String.Doc
-  .s2    { color: $catGreen } // Literal.String.Double
-  .se    { color: $catGreen } // Literal.String.Escape
-  .sh    { color: $catGreen } // Literal.String.Heredoc
-  .si    { color: $catGreen } // Literal.String.Interpol
-  .sx    { color: $catGreen } // Literal.String.Other
-  .sr    { color: $catGreen } // Literal.String.Regex
-  .s1    { color: $catGreen } // Literal.String.Single
-  .ss    { color: $catGreen } // Literal.String.Symbol
-  .bp    { color: $catOverlay } // Name.Builtin.Pseudo
-  .vc    { color: $catYellow } // Name.Variable.Class
-  .vg    { color: $catYellow } // Name.Variable.Global
-  .vi    { color: $catYellow } // Name.Variable.Instance
-  .il    { color: $catPeach } // Literal.Number.Integer.Long
+  .mf    { color: $darkcatPeach } // Literal.Number.Float
+  .mh    { color: $darkcatPeach } // Literal.Number.Hex
+  .mi    { color: $darkcatPeach } // Literal.Number.Integer
+  .mo    { color: $darkcatPeach } // Literal.Number.Oct
+  .sb    { color: $darkcatGreen } // Literal.String.Backtick
+  .sc    { color: $darkcatGreen } // Literal.String.Char
+  .sd    { color: $darkcatGreen } // Literal.String.Doc
+  .s2    { color: $darkcatGreen } // Literal.String.Double
+  .se    { color: $darkcatGreen } // Literal.String.Escape
+  .sh    { color: $darkcatGreen } // Literal.String.Heredoc
+  .si    { color: $darkcatGreen } // Literal.String.Interpol
+  .sx    { color: $darkcatGreen } // Literal.String.Other
+  .sr    { color: $darkcatGreen } // Literal.String.Regex
+  .s1    { color: $darkcatGreen } // Literal.String.Single
+  .ss    { color: $darkcatGreen } // Literal.String.Symbol
+  .bp    { color: $darkcatOverlay } // Name.Builtin.Pseudo
+  .vc    { color: $darkcatYellow } // Name.Variable.Class
+  .vg    { color: $darkcatYellow } // Name.Variable.Global
+  .vi    { color: $darkcatYellow } // Name.Variable.Instance
+  .il    { color: $darkcatPeach } // Literal.Number.Integer.Long
 }
