@@ -108,7 +108,8 @@ SourceTerm
 }
 ```
 
-#### Set the temperature in a cell zone
+#### Set the temperature in a cell zone  
+
 ```c++
 SourceTerm
 {
@@ -141,3 +142,4 @@ SourceTerm
         eqn.setValues(cells_, thermo.he(thermo.p(), Tref, cells_));
     #};
 }
+```
